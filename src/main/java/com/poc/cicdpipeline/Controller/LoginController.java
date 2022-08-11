@@ -23,6 +23,7 @@ public class LoginController {
     @GetMapping(value = "/getEmployeeDetails")
     public ResponseEntity getEmployeeDetails(){
 
+
        return new ResponseEntity<>(employeeRepository.findAll(),HttpStatus.OK);
     }
 
