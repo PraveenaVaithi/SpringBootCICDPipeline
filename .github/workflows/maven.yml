@@ -27,7 +27,7 @@ jobs:
 
 
     - name: Build and Push Docker image
-      uses:  docker/build-push-action@v4
+      uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: praveenavaithi/dockerimage
         tags:  latest
