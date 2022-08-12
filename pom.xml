@@ -61,8 +61,12 @@
 				<!-- Build an executable JAR -->
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
-				<version>3.1.0</version>
+			<version>3.1.0</version>
+
 				<configuration>
+					<excludes>
+						<exclude>**/log4j.properties</exclude>
+					</excludes>
 					<archive>
 						<manifest>
 							<mainClass>com.poc.cicdpipeline.SpringBootCicdPipelineApplication</mainClass>
